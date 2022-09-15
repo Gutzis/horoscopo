@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Audiowide&family=Londrina+Shadow&family=Londrina+Sketch&family=Montserrat:wght@500&family=Orbitron&family=Rampart+One&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<header>
+		<button class="azul" id="modoEscuro">Modo Azul</button>
+	</header>
+	<h1>Horóscopo</h1>
+	<div class="linha">
+		<p><input class="dataNascimento" type="date" name="data"></p>
+		<button class="oculto" id="limpar">Limpar</button>
+		<button id="enviar">Enviar</button>
+	</div>
+	<div class="container">
+		<p class="nome-signo"></p>
+		<img class="seta" src="./imagens/setaroxa.png" alt="">
+		<img class="imagem" src="./imagens/signo1.png" class="" id="img" alt="Teste" />
+	</div>
+	<div class="frase oculto">
+		<p class="signo"></p>
+		<p class="previsao"></p>
+	</div>
+</body>
+<script src="./js/signo.js"></script>
+<script src="./js/scrapping.js"></script>
+<script src="./js/script.js"></script>
+
+</html>

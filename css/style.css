@@ -1,0 +1,128 @@
+header {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 50px;
+  color: var(--titulos);
+  border-radius: 50px;
+  margin: auto;
+  width: 500px;
+}
+
+p {
+  font-family: 'montserrat', sans-serif;
+  color: var(--texto);
+  display: flex;
+}
+
+body {
+  text-align: center;
+  background: var(--fundo);
+  background-image: var(--back);
+}
+
+button{
+  background: var(--botao);
+  color: rgb(255, 255, 255);
+  height: 30px;
+  border: 0;
+  font-size: 14px;
+  border-radius: 4px;
+  font-family: 'montserrat', sans-serif;
+  transition: .6s;
+  overflow: hidden;
+  outline: 0;
+  margin-right: 20px;
+  width: 100px;
+  }
+
+:root {
+  --fundo: #FFF;
+  --titulos: rgb(111, 0, 255);
+  --paragrafos: rgb(255, 255, 255);
+  --texto:  rgb(255, 255, 255);
+  --data:  rgb(111, 0, 255);
+  --botao:  rgb(111, 0, 255);
+  --border: rgb(111, 0, 255);
+  --elemento: #ffffff;
+  --back: url(../imagens/galax1.gif);
+}
+
+.modoEscuro:root {
+  --fundo: #111;
+  --titulos: rgb(58, 109, 250);
+  --paragrafos: rgb(255, 255, 255);
+  --texto: rgb(255, 255, 255);
+  --data: rgb(58, 109, 250);
+  --botao: rgb(58, 109, 250);
+  --border: rgb(58, 109, 250);
+  --elemento: #000000;
+  --back: url(../imagens/galax.gif);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  flex-direction: column ;
+}
+
+.imagem {
+  width: 420px;
+  z-index: -1;
+}
+
+.seta {
+  width: 75px;
+  margin: -10px;
+}
+
+.nome-signo {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--paragrafos);
+}
+
+.dataNascimento {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: var(--data);
+  width: 200px;
+  height: 30px;
+  border: solid 3px;
+  border: rgb(153, 138, 221);
+  font-size: 15px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.linha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frase {
+  width: 60vw;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: solid 1px;
+  border-color: var(--border);
+  border-radius: 20px;
+}
+
+.oculto {
+  display: none;
+}
+
+.escuro {
+  font-size: 10px;
+}
